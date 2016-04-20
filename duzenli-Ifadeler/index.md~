@@ -35,7 +35,7 @@ Sümeyye SEVİNÇ `<sesumy@bil.omu.edu.tr >`
 -        Pumping Lemma
 -        Pumping Lemma Soru Çözümü-1
 -        Pumping Lemma Soru Çözümü-2
--        ***QUİZ***
+-        ***QUIZ***
 ## Düzenli İşlemler ve Düzenli İfadeler
 .fx: first
 
@@ -206,10 +206,23 @@ Genellikle yapılan hatalı çizim ;
 
 ## Örnek 1
 -       (01 ∪ 0)* düzenli ifadesini NFA formuna dönüştürünüz.
-![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/ornek131.png)
+
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/1.png)
+
+-       01 durumu:
+
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/2.png)
+
 
 ##
-![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/ornek132.png)
+
+-       (01 U 0) durumu: 
+
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/3.png)
+
+-       (01 U 0)* ifademizin sonucu : 
+
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/4.png)
 
 
 ## Örnek 2
@@ -227,7 +240,7 @@ Genellikle yapılan hatalı çizim ;
 
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/beri2.png)
 
-	İfademizin (a ∪ b) kısmı:
+	İfademizin (a ∪ b)* kısmı:
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/beri3.png)
 ## 
 
@@ -238,7 +251,12 @@ Genellikle yapılan hatalı çizim ;
 (a ∪ b)*ab ∪ c ifademizin sonucu
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/beri5.png)
 
--         Yukarıdaki soru çözümü sırasında izlenen yöntem parçala fethet yöntemidir. Problem cevabını bildiğimiz basit parçalara bölünmüş ve sonra birleştirilmiştir. Problemde özel olarak karşılaşılabilecek en temel 3 durum olan veya (U), üleştirme (concetanation) ve kleene yıldızı durumlarını içeren bir örnektir.
+-       Soru çözümü sırasında izlenen yöntem parçala fethet yöntemidir.
+
+-       Problem cevabını bildiğimiz basit parçalara bölünmüş ve sonra birleştirilmiştir.
+
+-       Problem en temel 3 durum olan veya (U), üleştirme (concetanation) ve kleene yıldızı 
+durumlarını içermektedir.
 
 ## Pumping Lemma
 
@@ -252,15 +270,15 @@ Genellikle yapılan hatalı çizim ;
 
 -      Pumbing Lemma aslında Sonlu Durum makinesidir(FSM).Fakat klasik bir FSM’den biraz farklıdır.Klasik bir FSM şu koşulları sağlar;
 
-     - State sayısı sınırlıdır.
+     - Durum sayısı sınırlıdır.
 
      - Geçiş sayısı sınırlıdır.
 
-     - Başlangıç ve bitiş state’leri bellidir.
+     - Başlangıç ve bitiş durumları bellidir.
 
--     Klasik bir FSM kaç tane girdi okuduğunu ve hangi statelerden geçtiğini saklamaz.Pumbing Lemma ise saklar.
+-     Klasik bir FSM kaç tane girdi okuduğunu ve hangi durumlardan geçtiğini saklamaz.Pumbing Lemma ise saklar.
 
--     Pumbing Lemma  state sakladığı için başa dönüp tekrar aynı state’den geçip geçmediğini anlayabilir.Yani Pumbing Lemma bir dilin düzenli olup olmadığını ispatlamak için kullanılır.
+-     Pumbing Lemma  durumları sakladığı için başa dönüp tekrar aynı durumdan geçip geçmediğini anlayabilir.Yani Pumbing Lemma bir dilin düzenli olup olmadığını ispatlamak için kullanılır.
 
 ##
 
@@ -275,23 +293,23 @@ Genellikle yapılan hatalı çizim ;
 -       L düzenli dili için;
 
     - Öncelikle bir “p” sayısı belirlenir.(L’ yi tanıyan özdevinirlerden en küçük duruma sahip olan)
-    - Ve bu dil içerisinde p’den daha uzun bir “w” stringi belirlenir.
+    - Ve bu dil içerisinde p’den daha uzun bir “w” katarı belirlenir.
 
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/ornek3.png)
 
-***Pumbing işlemi w stringinin, p sembolü içinde yapılabilir.***
+***Pumbing işlemi w katarının, p sembolü içinde yapılabilir.***
 ##
--       İşte böyle bir w stringi aynı zamanda aşağıdaki 4 şartı sağlamalıdır;
+-       İşte böyle bir w katarı aynı zamanda aşağıdaki 4 şartı sağlamalıdır;
     
-     - w stringi x,y,z  şeklinde  3 parçaya ayrılabilmelidir.
+     - w katarı x,y,z  şeklinde  3 parçaya ayrılabilmelidir.
 
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/ornek4.png)
 
--       L dilinde sonsuz string olduğu için bazı w stringleri kendisini tanıyan otomatın durum sayısından daha fazla sembole sahiptir. Bu stringler için otomat üzerinde loop oluşur.
+-       L dilinde sonsuz katar olduğu için bazı w katarları kendisini tanıyan otomatın durum sayısından daha fazla sembole sahiptir. Bu katarlar için otomat üzerinde döngü oluşur.
 
-     -  x yeniden geçilen ilk duruma kadar olan sembolleri içersin. x eğer boş ise loop başlangıç durumunuda içine almıştır. 
-     -  y string’i, x’ den hemen sonra başlayıp loop’un sonuna kadar olan kısmı içerir. Loop olduğu için y boş olamaz. 
-     -  z string’i loop’tan hemen sonra başlayıp w string’inin sonuna kadar olan kısmı içersin. z boş ise loop sonuç durumunuda içine almıştır.
+     -  x yeniden geçilen ilk duruma kadar olan sembolleri içersin. x eğer boş ise döngü başlangıç durumunuda içine almıştır. 
+     -  y katarı, x’ den hemen sonra başlayıp döngünün sonuna kadar olan kısmı içerir. Döngü olduğu için y boş olamaz. 
+     -  z katarı döngüden hemen sonra başlayıp w katarının sonuna kadar olan kısmı içersin. z boş ise döngü sonuç durumunuda içine almıştır.
 
 ##
 
@@ -302,11 +320,13 @@ Genellikle yapılan hatalı çizim ;
 -       x ve y teriminin üst değerleri toplamı, toplam üst değerinden küçük veya eşit olmalıdır.
     - |xy| ≤ p
 
--       Ayrıca dilin düzenli ifade olabilmesi için y teriminin üstü olan i değeri istenildiği kadar arttırılabilmeli ve elde edilen sonuç yine düzenli ifade olmalıdır.xz ϵ L ve i≥0 olmalıdır.
+-       Ayrıca dilin düzenli ifade olabilmesi için y teriminin üstü olan i değeri istenildiği kadar arttırılabilmeli ve elde edilen sonuç yine düzenli ifade olmalıdır.
 
-Örneğin;  i= 4  için w=xz ‘dir. 
+xy^iz ϵ L ve i≥0 olmalıdır.
 
-Yani xyz, xyyz, xyyyz, xyyyyz  stringlerini tanır.
+Örneğin;  i= 4  için w=xy^iz ‘dir. 
+
+Yani xyz, xyyz, xyyyz, xyyyyz  katarların tanır.
 
 ------
 
@@ -323,7 +343,9 @@ Yani xyz, xyyz, xyyyz, xyyyyz  stringlerini tanır.
 
 ##Cevap
 
-W=xynz
+Eşit sayıda 01 ve 10 olmalı
+
+w=x(y^i)z
 
 Durumlar :          x    y    z
 
@@ -335,27 +357,16 @@ Durumlar :          x    y    z
 
                     0    11   0           => 4
 
--        Yn ' in bütün durumları yukarıda verilmiştir .xz (11) şeklinde olabilir ve bu durumda 01 ve 10'ların eşitlik durumu sağlanır. 
+-        y^i ' in bütün durumları yukarıda verilmiştir .
+xz (11) şeklinde olabilir ve bu durumda 01 ve 10'ların eşitlik durumu sağlanır. 
 
--        Aynı şekilde 4. durumda da xz (00) şeklinde olup eşitlik sağlanır. '.durumda xz ifadesi (01) ve 3. durumda da (10) şeklindedir. Sonuç olarak L dilimiz düzenlidir.
+-        Aynı şekilde 4. durumda da xz (00) şeklinde olup eşitlik sağlanır.
+ 2.durumda xz ifadesi (01) ve 3. durumda da (10) şeklindedir. 
+Sonuç olarak L dilimiz düzenlidir.
 
 ##
 
--        Soru:  D={ 1 n2  | n ≥ 0 } Dilinin düzenli olup olmadığını Pumping Lemma yöntemiyle ispatlayın.
-
-## Cevap
-
-w=xyz      1≤ y ≤n 
-
-W=xynz      n tek ise => (2k1+1)2
-                
-            n  çift ise => (2k2)2
-
-n=2 için;   n2< xynz ≤ n2+n < (n+1)2
-
-Her tamsayının tam kare olmama durumundan dolayı düzenli değildir.
-
-
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/sino1.png)
 
 ## Pumping Lemma Örnek
 .fx: first
@@ -387,97 +398,71 @@ Kek,aba,kazak,radar,süs…
 
 -        Öncelikle dilimizin düzenli olduğunu varsayalım ve tüm çıktılarımızı X, Y, Z olacak şekilde üç parçaya bölelim.
 
--        S=  xyiz ⊆ { ap  bp+1  ap  }  //  Palindrom ifademizi ap  bp+1  ap   şeklinde seçelim.
+-        S=  xy^iz ⊆ { a^p  b^(p+1)  a^p  }  //  Palindrom ifademizi a^p  b^(p+1)  a^p   şeklinde seçelim.
 
 -        Dilimizi düzenli kabul edip işlemlerimizi ona göre yapacağız. Eğer parçalara ayırıp baktığımız her koşulu sağlıyorsa ifade düzenli olacaktır. Çelişki durumu ile karşılaşırsak bu,dilin düzenli olmadığına işarettir.
 
 -         Kabullerimizi oluştururken y’nin boş olmama durumunu göz önüne alarak x ve z’yi uygun seçmeliyiz.
 
 ## x a ve b ‘lerden, y sadece a’lardan oluşsun
+
 </br>
 
--        X= ap  bp+1       y=ak    z=ap-k   
-
-    -     1.Koşul  |y| > 0  ve  y ≠ɛ  
-
-              Bu koşul sağlanıyor, çünkü y= ak
-
-    -     2.Koşul  |xy| ≤ p
-
-              p+p+1+k < p+p+1+p
-        
-              2p+1+k < 3p+1 
-        
-              2p+k < 3p   ifadesi için z= ap-k   ifadesine bakılır.  
-p-k > 0 olması gerektiğinden p > k olur ve koşul sağlanır.
-
-    -     3.Koşul  xy2z
-
-              apbp+1 akakap-k   ifadesi sadeleştirilince 
-apbp+1 akap  ifadesi kalır. Burada ak ifadesinden dolayı çelişki vardır.
-ap  bp+1  ap   kelimemizle aynı değildir.
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/sunu1.png)
 
 ##y sadece b’lerden, z a ve b’lerden oluşsun
+
 </br>
 
--          X= ap         y=bk    z=bp-k+1ap   
-
-     -      1.Koşul  |y| > 0  ve  y ≠ɛ  
-
-                Bu koşul sağlanıyor, çünkü y= bk
-
-     -      2.Koşul  |xy| ≤ p
-              
-                 p+k < p+p+1+p
-              
-                 p+k < 3p+1 
-              
-                 k < 2p+1   ifadesi için z= bp-k+1ap   ifadesine bakılır.
-		 p> 0 ve p-k+1> 0 olması gerektiğinden koşul sağlanır.
-
-     -     3.Koşul   xy2z  
-             
-                 ap bk bk bp-k+1ap    ifadesi sadeleştirilince   
- ap bk bp+1 ap  ifadesi kalır.Burada bk ifadesinden dolayı çelişki
- vardır.ap  bp+1  ap kelimemizle aynı değildir
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/sunu2.png)
 
 ## y a ve b’lerden oluşsun
+ 
+</br>
 
- </br>
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/sunu3.png)
 
--       X= ap-k         y=akbp   z=bap   
 
-    -      1.Koşul  |y| > 0  ve  y ≠ɛ  
 
-               Bu koşul sağlanıyor, çünkü y= akbp
-
-    -      2.Koşul  |xy| ≤ p
-       
-               p-k+k+p < p+p+1+p
-            
-               2p < 3p+1 ifadesi koşulu sağlıyor.
-
-    -      3.Koşul  xy2z  
-      
-               ap-k akbp akbp bap   ifadesi sadeleştirilince     
-ap bp  ak bp+1 ap  ifadesi kalır. Burada bpak ifadesinden dolayı çelişki vardır.
-ap  bp+1  ap kelimemizle aynı değildir
 
 ## SONUÇ
 
 -        Ayırdığımız her parça için baktığımız 3 koşul neticesindeki çelişki durumlarından dolayı bu dilin düzenli olmadığına karar verilmiştir.
 
-##QUİZ 1.SORU
+##TEŞEKKÜRLER 
+.fx: first
+
+--------
+Şimdi sıra quizde..
+
+
+##QUIZ 1.SORU
 -        (ab ⋃ aba)* düzenli ifadesini NFA formunda bulunuz.
 
 
-##QUİZ 2.SORU
+##QUIZ 2.SORU
 
--        2) A= {aibj | i>j } dili düzenli değildir, gösteriniz.
-
-
+-        2) A= {a^ib^j | i>j } dili düzenli değildir, gösteriniz.
 
 
+
+##QUIZ 1.SORU CEVABI
+
+L={ε, ab, aba, abab, ababa, aba} ifadelerini üretebilir.
+
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/quiz1.png)
+
+##QUIZ 2.SORU CEVABI
+
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/2.1.png)
+
+##
+
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/2.2.png)
+
+##
+
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/2.3.png)
 
 
 
