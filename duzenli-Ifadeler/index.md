@@ -1,4 +1,8 @@
-#  Sunumu Hazırlayanlar 
+# Düzenli İfadeler
+.fx: first
+
+
+##  Sunumu Hazırlayanlar 
 .fx: first 
 
 Ayşe Berika VAROL `<berika.varol@bil.omu.edu.tr>`
