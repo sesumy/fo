@@ -259,7 +259,7 @@ durumlarını içermektedir.
 
 -       Pumping Lemma bir dilin düzenli olup olmadığını ispatlamak için kullanılır.
 
--       Pumping Lemma bilgisayar bilimlerinde dil tasarımı konusunda önemli araçlardan birisidir.Eğer bir dil sonsuz kümeyi kapsıyorsa bu dili ne kadar arttırılırsa arttırılsın sonuçta yine aynı dil grubundan olmalıdır. Ve ancak bu sayede bu dilden üretilebilen bütün sonuçların aynı dil grubundan olduğu iddia edilir.
+-       Pumping Lemma bilgisayar bilimlerinde dil tasarımı konusunda önemli araçlardan birisidir.Eğer bir dil sonsuz kümeyi kapsıyorsa bu dil ne kadar arttırılırsa arttırılsın sonuçta yine aynı dil grubundan olmalıdır. Ve ancak bu sayede bu dilden üretilebilen bütün sonuçların aynı dil grubundan olduğu iddia edilir.
 
 ##
 
