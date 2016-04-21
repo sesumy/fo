@@ -387,9 +387,7 @@ Kek,aba,kazak,radar,süs…
 
 ##QUIZ 
 
-![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/soru1.png)
-
-![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/soru2.png)
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/quiz.png)
 
 ##
 
