@@ -137,7 +137,6 @@ Teorem:
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/durum2.png)
 
 
-
 -       Durum 3:R=Ø
 
     -   L(R)= Ø 
@@ -191,26 +190,26 @@ Genellikle yapılan hatalı çizim ;
 
 ## Örnek 1
 -       (01 ∪ 0)* düzenli ifadesini NFA formuna dönüştürünüz.
--       01 durumu:
+-        01 durumu:
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/2.png)
 
--       0 durumu:
+-        0 durumu:
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/1.png)
 ##
 
--       (01 U 0) durumu: 
+-        (01 U 0) durumu: 
 
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/3.png)
 
 ##
--       (01 U 0)* ifademizin sonucu : 
+-        (01 U 0)* ifademizin sonucu : 
 
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/4.png)
 
 
 ## Örnek 2
 
--       (a ∪ b)*ab ∪ c düzenli ifadesini NFA formuna dönüştürünüz.
+-        (a ∪ b)*ab ∪ c düzenli ifadesini NFA formuna dönüştürünüz.
 
        L={ ab, aab, bab, aaab, bbbab, abab , c, ...} ifadelerini üretebilir. Yani ifademizi ikiye ayırıp inceleyeceğiz.
 
@@ -220,6 +219,7 @@ Genellikle yapılan hatalı çizim ;
 ##
       İfademizin (a ∪ b)*ab kısmı:
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/beri2.png)
+  
       İfademizin (a ∪ b)* kısmı:
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/beri3.png)
 
@@ -228,7 +228,7 @@ Genellikle yapılan hatalı çizim ;
 ##
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/beri4.png)
 
-(a ∪ b)*ab ∪ c ifademizin sonucu
+      (a ∪ b)*ab ∪ c ifademizin sonucu
 
 </br>
 
@@ -240,7 +240,7 @@ Genellikle yapılan hatalı çizim ;
 
 -       Problem cevabını bildiğimiz basit parçalara bölünmüş ve sonra birleştirilmiştir.
 
--       Problem en temel 3 durum olan veya (U), üleştirme (concetanation) ve kleene yıldızı 
+-       Problem en temel 3 durum olan veya (U), birleştirme (concetanation) ve kleene yıldızı 
 durumlarını içermektedir.
 
 ## Pumping Lemma
@@ -292,11 +292,16 @@ durumlarını içermektedir.
 
 -       Ayrıca dilin düzenli ifade olabilmesi için y teriminin üstü olan i değeri istenildiği kadar arttırılabilmeli ve elde edilen sonuç yine düzenli ifade olmalıdır.
  
-      xy^iz ϵ L ve i≥0 olmalıdır.
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/aysen.png)
 
 ##
 
 -      Özet:  Daha basit bir ifadeyle, bir dilden üretilen bir terim üç parçaya bölündüğünde ortasındaki parça boş olmamalı, istenildiği kadar tekrarlanabilmeli ve çıkan bütün sonuçlar yine aynı dilden olmalıdır.
+
+##
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/aysen2.png)
+
+
 ## Pumping Lemma Örnek
 .fx: first
 
