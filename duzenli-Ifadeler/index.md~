@@ -340,7 +340,7 @@ durumlarını içermektedir.
 -       Palindrom nedir? 
 
 ## 
--       Palindrom, tersten ve düzden okunuşu aynı olan cümle,sözcük veya sayılara denir.
+-       Palindrom, tersten ve düzden okunuşu aynı olan en az iki kelimeden oluşan sözcük,cümle veya sayılara denir.
 
 -       Palindrom kelimelere örnek verecek olursak:
 	
