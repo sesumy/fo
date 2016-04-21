@@ -387,6 +387,13 @@ Kek,aba,kazak,radar,süs…
 
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/soru2.png)
 
+##
+
+
+
+
+
+
 ##QUIZ 1.SORU CEVABI
 
 L={ε, ab, aba, abab, ababa, aba} ifadelerini üretebilir.
