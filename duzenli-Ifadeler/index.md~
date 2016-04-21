@@ -1,18 +1,4 @@
-#  Düzenli İfadeler
-
-.fx: first
- 
-
-
-
-***Nisan 2016***
-
-
-***Sedat AKLEYLEK***
-
--------
-
-##  Sunumu Hazırlayanlar 
+#  Sunumu Hazırlayanlar 
 .fx: first 
 
 Ayşe Berika VAROL `<berika.varol@bil.omu.edu.tr>`
@@ -100,7 +86,7 @@ Sümeyye SEVİNÇ `<sesumy@bil.omu.edu.tr >`
 
      - (0 U 1)* ==> {ε, 0, 1, 00, 01, 10, 11, ...}
 
-     - a(b U cd*)*a ==> {aa, aba, acda, acdda, ...}
+     - a( b U cd*)a ==> {aa, aba, acda, acdda, ...}
 
 ##Düzenli İfade Özellikleri
 
@@ -179,7 +165,7 @@ Teorem:
      -  L(R1*) = (L(R1))*
 
 ##Örnek
--       a*b* düzenli ifadesini NFA formuna dönüştürünüz.
+-       a* b * düzenli ifadesini NFA formuna dönüştürünüz.
 
 Genellikle yapılan hatalı çizim ;
 
@@ -189,7 +175,7 @@ Genellikle yapılan hatalı çizim ;
 
 ##
 
--        Örnek çizim;
+-        Doğru çizim;
 
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/ornek12.png)
 
@@ -202,24 +188,21 @@ Genellikle yapılan hatalı çizim ;
 ***13061061***
 
 ***Ayşe Berika VAROL***
-  
 
 ## Örnek 1
 -       (01 ∪ 0)* düzenli ifadesini NFA formuna dönüştürünüz.
-
-![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/1.png)
-
 -       01 durumu:
-
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/2.png)
 
-
+-       0 durumu:
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/1.png)
 ##
 
 -       (01 U 0) durumu: 
 
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/3.png)
 
+##
 -       (01 U 0)* ifademizin sonucu : 
 
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/4.png)
@@ -235,21 +218,23 @@ Genellikle yapılan hatalı çizim ;
 
 	
 ##
-
       İfademizin (a ∪ b)*ab kısmı:
-
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/beri2.png)
-
-	İfademizin (a ∪ b)* kısmı:
+      İfademizin (a ∪ b)* kısmı:
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/beri3.png)
-## 
 
-![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/beri4.png)
+
 
 ##
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/beri4.png)
 
 (a ∪ b)*ab ∪ c ifademizin sonucu
+
+</br>
+
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/beri5.png)
+
+##
 
 -       Soru çözümü sırasında izlenen yöntem parçala fethet yöntemidir.
 
@@ -268,24 +253,9 @@ durumlarını içermektedir.
 
 ## Pumping Lemma (Tulumba Önerisi) 
 
--      Pumbing Lemma aslında Sonlu Durum makinesidir(FSM).Fakat klasik bir FSM’den biraz farklıdır.Klasik bir FSM şu koşulları sağlar;
+-       Pumping Lemma bir dilin düzenli olup olmadığını ispatlamak için kullanılır.
 
-     - Durum sayısı sınırlıdır.
-
-     - Geçiş sayısı sınırlıdır.
-
-     - Başlangıç ve bitiş durumları bellidir.
-
--     Klasik bir FSM kaç tane girdi okuduğunu ve hangi durumlardan geçtiğini saklamaz.Pumbing Lemma ise saklar.
-
--     Pumbing Lemma  durumları sakladığı için başa dönüp tekrar aynı durumdan geçip geçmediğini anlayabilir.Yani Pumbing Lemma bir dilin düzenli olup olmadığını ispatlamak için kullanılır.
-
-##
-
--       Pumbing Lemma bilgisayar bilimlerinde dil tasarımı konusunda önemli araçlardan birisidir.Eğer bir dil sonsuz kümeyi kapsıyorsa bu dili ne kadar pompalarsak pompalayalım sonuçta yine aynı dil grubundan olmalıdır. Ve ancak bu sayede bu dilden üretilebilen bütün sonuçların aynı dil grubundan olduğu iddia edilir.
-
--       Yukarıdaki tanımlamada geçen pompalamak işlemi bir dil gramerinin bir kısmının şişirilmesi, arttırılması veya çoğaltılması olarak algılanabilir.
-
+-       Pumping Lemma bilgisayar bilimlerinde dil tasarımı konusunda önemli araçlardan birisidir.Eğer bir dil sonsuz kümeyi kapsıyorsa bu dili ne kadar arttırılırsa arttırılsın sonuçta yine aynı dil grubundan olmalıdır. Ve ancak bu sayede bu dilden üretilebilen bütün sonuçların aynı dil grubundan olduğu iddia edilir.
 
 ##
 
@@ -297,7 +267,7 @@ durumlarını içermektedir.
 
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/ornek3.png)
 
-***Pumbing işlemi w katarının, p sembolü içinde yapılabilir.***
+***Pumping işlemi w katarının, p sembolü içinde yapılabilir.***
 ##
 -       İşte böyle bir w katarı aynı zamanda aşağıdaki 4 şartı sağlamalıdır;
     
@@ -313,7 +283,7 @@ durumlarını içermektedir.
 
 ##
 
--       y’ li kısmı boş olmamalı yani en az 1 tane eleman içermelidir.
+-      y’ li kısmı boş olmamalı yani en az 1 tane eleman içermelidir.
 
     - |y| ≥ 1
 
@@ -321,14 +291,10 @@ durumlarını içermektedir.
     - |xy| ≤ p
 
 -       Ayrıca dilin düzenli ifade olabilmesi için y teriminin üstü olan i değeri istenildiği kadar arttırılabilmeli ve elde edilen sonuç yine düzenli ifade olmalıdır.
+ 
+      xy^iz ϵ L ve i≥0 olmalıdır.
 
-xy^iz ϵ L ve i≥0 olmalıdır.
-
-Örneğin;  i= 4  için w=xy^iz ‘dir. 
-
-Yani xyz, xyyz, xyyyz, xyyyyz  katarların tanır.
-
-------
+##
 
 -      Özet:  Daha basit bir ifadeyle, bir dilden üretilen bir terim üç parçaya bölündüğünde ortasındaki parça boş olmamalı, istenildiği kadar tekrarlanabilmeli ve çıkan bütün sonuçlar yine aynı dilden olmalıdır.
 ## Pumping Lemma Örnek
@@ -339,31 +305,12 @@ Yani xyz, xyyz, xyyyz, xyyyyz  katarların tanır.
 ***Sinem Aybike HÜR***
 ##
 
--       Soru: L={ w |w  eşit sayıda 01 ve 10'lardan oluşuyor} Dilinin düzenli olup olmadığını Pumping Lemma yöntemiyle ispatlayın.
+-       Soru: L={ w |w  eşit sayıda 01 ve 10'lardan oluşuyor} 
+       
+ Dilinin düzenli olup olmadığını Pumping Lemma yöntemiyle ispatlayın.
 
 ##Cevap
-
-Eşit sayıda 01 ve 10 olmalı
-
-w=x(y^i)z
-
-Durumlar :          x    y    z
-
-                    1    00   1           => 1
-
-                    -    10   -           => 2
-
-                    -    01   -           => 3
-
-                    0    11   0           => 4
-
--        y^i ' in bütün durumları yukarıda verilmiştir .
-xz (11) şeklinde olabilir ve bu durumda 01 ve 10'ların eşitlik durumu sağlanır. 
-
--        Aynı şekilde 4. durumda da xz (00) şeklinde olup eşitlik sağlanır.
- 2.durumda xz ifadesi (01) ve 3. durumda da (10) şeklindedir. 
-Sonuç olarak L dilimiz düzenlidir.
-
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/sin.png)
 ##
 
 ![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/sino1.png)
@@ -377,7 +324,7 @@ Sonuç olarak L dilimiz düzenlidir.
 
 ##
 
--       Soru:  ∑= { a ve b’lerden oluşuyor | palindrom } dili düzenli değildir.
+-       Soru:  ∑= { a ve b harflerini içeren, en az iki karakterden oluşan palindrom sözcükler} dili düzenli değildir.İspatlayınız.
 
 ##
 
@@ -395,14 +342,7 @@ Kek,aba,kazak,radar,süs…
 { aa, bb, aba, abba, abbba, aabbaa, bab, baab, babab… } şeklindedir.
 
 ##
-
--        Öncelikle dilimizin düzenli olduğunu varsayalım ve tüm çıktılarımızı X, Y, Z olacak şekilde üç parçaya bölelim.
-
--        S=  xy^iz ⊆ { a^p  b^(p+1)  a^p  }  //  Palindrom ifademizi a^p  b^(p+1)  a^p   şeklinde seçelim.
-
--        Dilimizi düzenli kabul edip işlemlerimizi ona göre yapacağız. Eğer parçalara ayırıp baktığımız her koşulu sağlıyorsa ifade düzenli olacaktır. Çelişki durumu ile karşılaşırsak bu,dilin düzenli olmadığına işarettir.
-
--         Kabullerimizi oluştururken y’nin boş olmama durumunu göz önüne alarak x ve z’yi uygun seçmeliyiz.
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/hatcik.png)
 
 ## x a ve b ‘lerden, y sadece a’lardan oluşsun
 
@@ -436,15 +376,11 @@ Kek,aba,kazak,radar,süs…
 Şimdi sıra quizde..
 
 
-##QUIZ 1.SORU
--        (ab ⋃ aba)* düzenli ifadesini NFA formunda bulunuz.
+##QUIZ 
 
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/soru1.png)
 
-##QUIZ 2.SORU
-
--        2) A= {a^ib^j | i>j } dili düzenli değildir, gösteriniz.
-
-
+![Alt text](/home/sumeyye/bar/duzenli-Ifadeler/resim/soru2.png)
 
 ##QUIZ 1.SORU CEVABI
 
